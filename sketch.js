@@ -68,6 +68,7 @@ function draw(){
           button1.destroy();
           cusor.destroy();
 gameState = "PLAY";
+        text(score,200,200)
       }
      
     }
