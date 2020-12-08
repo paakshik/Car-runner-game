@@ -147,7 +147,8 @@ surfer.rotation = 5;
     if (coinG.isTouching(surfer)){
         coinG.destroyEach();
         score = score + 1;
-    }}
+    }
+    }
     if (gameState === "END"){
         imageMode(CENTER);
         image(bo,200,200,400,400);
