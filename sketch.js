@@ -114,7 +114,7 @@ case 4:car.addImage(ob4);
 break;
 }
 }
-
+text(survivalIime,200,200);
 if (World.frameCount % 300 === 0){
         coin = createSprite(random(120,290),10,10,10);
         coin.velocityY = 2; 
