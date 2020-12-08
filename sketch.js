@@ -68,7 +68,7 @@ function draw(){
           button1.destroy();
           cusor.destroy();
 gameState = "PLAY";
-        text(score,200,200)
+        
       }
      
     }
@@ -80,6 +80,7 @@ gameState = "PLAY";
         survivalTime = survivalTime+ abs(Math.round(getFrameRate()/40));
         back.visible = 1;
         surfer.visible = 1;
+        text(time,200,200)
         if (surfer.x < 100){
             surfer.x = 100;
             surfer.velocityX = 0;
@@ -147,7 +148,8 @@ surfer.rotation = 5;
         coinG.destroyEach();
         score = score + 1;
     }
-    fill("blue");
+   fill("green");
+        
      
 }
     if (gameState === "END"){
