@@ -49,6 +49,7 @@ cum.addImage(mouse);
 cum.scale = 0.03;
 cum.visible = 0;
 
+plant1 = createSprite()
 if (!localStorage["HS"]){
     localStorage["HS"] = 0;  
 }
@@ -128,17 +129,10 @@ if (World.frameCount % 300 === 0){
             if (lives > 0){
                 carG.destroyEach();
             }
-            if (lives === 1){
-surfer.addImage(broke);
-surfer.scale =1.4;
-surfer.rotation = 5;
+         
             }
            if (lives === 0){
-            
-            button2.visible = 1;
-           
-           
-
+           button2.visible = 1;
            gameState = "END";
            }
             
