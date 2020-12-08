@@ -80,7 +80,7 @@ gameState = "PLAY";
         survivalTime = survivalTime+ abs(Math.round(getFrameRate()/40));
         back.visible = 1;
         surfer.visible = 1;
-        text(time,200,200)
+        
         if (surfer.x < 100){
             surfer.x = 100;
             surfer.velocityX = 0;
@@ -114,7 +114,7 @@ case 4:car.addImage(ob4);
 break;
 }
 }
-text(survivalIime,200,200);
+text(survivalTime,200,200);
 if (World.frameCount % 300 === 0){
         coin = createSprite(random(120,290),10,10,10);
         coin.velocityY = 2; 
@@ -148,7 +148,7 @@ surfer.rotation = 5;
         coinG.destroyEach();
         score = score + 1;
     }
-   fill("green");
+  text(score,4,4)l
         
      
 }
