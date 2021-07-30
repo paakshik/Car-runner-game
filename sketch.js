@@ -176,7 +176,7 @@ if (World.frameCount % 300 === 0){
     }
     drawSprites();
 }
- 
+}
 
 
 
